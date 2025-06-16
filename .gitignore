@@ -1,0 +1,242 @@
+# ==================================================
+# SENSITIVE DATA PROTECTION
+# ==================================================
+
+# Environment variables and API credentials
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+
+# User IDs and personal data
+user_ids/*.txt
+!user_ids/*.template
+!user_ids/.gitkeep
+
+# User data directories (contains sensitive user data)
+userData/
+userData/*
+!userData/.gitkeep
+
+# Raw user data
+userData_raw/
+**/userData_raw/
+
+# Processed user data
+userData/
+**/userData/
+
+# Event data
+Events/
+**/Events/
+
+# Product data (if contains sensitive info)
+product/
+!product/.gitkeep
+
+# ==================================================
+# SYSTEM FILES
+# ==================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ==================================================
+# PYTHON
+# ==================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ==================================================
+# IDE FILES
+# ==================================================
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ==================================================
+# TEMPORARY FILES
+# ==================================================
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.backup
+
+# Log files
+*.log
+logs/
+
+# ==================================================
+# CUSTOM PROJECT FILES
+# ==================================================
+
+# Session files (may contain sensitive data)
+session_*.json
+*.session
+
+# Config files with sensitive data
+config.ini
+config.json
+!config/*.template
+
+# Output files
+output/
+results/
+exports/
+
+# API response caches
+cache/
+*.cache 
